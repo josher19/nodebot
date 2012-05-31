@@ -113,7 +113,7 @@ npmDatabase = new (cradle.Connection)(
   80
 ).database 'registry'
 
-MYNICK = 'jhbot'
+MYNICK = config.irc.nick or 'jhbot'
 
 npmLoaded = false
 npm.load {}, (err) ->
@@ -718,4 +718,4 @@ irc.connect () ->
   console.dir arguments
   
   # new StackOverflow 'node.js', (line) -> reply '#node.js', line
-  # new StackOverflow 'coffeescript', (line) -> reply '#coffeescript', line
+  new StackOverflow 'coffeescript', (line) -> reply '#coffeescript', line

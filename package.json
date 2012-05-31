@@ -15,6 +15,7 @@
     "irc-js": "*",
     "cradle": "*",
     "github": "0.0.7",
+    "gzip-buffer": "*",
     "request": "*"
   },
   "version": "0.0.0-10"
