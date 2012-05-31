@@ -113,7 +113,7 @@ npmDatabase = new (cradle.Connection)(
   80
 ).database 'registry'
 
-MYNICK = config.irc.nick or 'jhbot'
+MYNICK = config.irc.nick or 'jhbot' # new config option
 
 npmLoaded = false
 npm.load {}, (err) ->
